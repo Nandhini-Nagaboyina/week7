@@ -3,7 +3,7 @@ agent any
 stages {
 stage('Clone Repository') {
 steps {
-git url: 'https://github.com/sriludone/Week-2.git', branch: 'main'
+git url: 'https://github.com/Nandhini-Nagaboyina/week7.git', branch: 'main'
 }
 }
 stage('Build Docker Image') {
@@ -19,4 +19,5 @@ bat 'docker run -d -p 5000:5000 --name registration-container registration:v1'
 }
 }
 }
+
 
